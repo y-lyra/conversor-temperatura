@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conversor de Temperatura</title>
+</head>
+<body>
+
+  <h1>Conversor de Temperatura</h1>
+
+  <input type="number" id="celsius"
+    placeholder="Digite em Celsius">
+
+  <br><br>
+
+  <button onclick="converter()">
+    Converter
+  </button>
+
+  <h2 id="resultado"></h2>
+
+  <script>
+
+    function converter() {
+
+      let celsius =
+        Number(document.getElementById("celsius").value);
+
+      let fahrenheit =
+        (celsius * 9/5) + 32;
+
+      document.getElementById("resultado").innerText =
+        celsius + "°C = " +
+        fahrenheit + "°F";
+
+    }
+
+  </script>
+
+</body>
+</html>
